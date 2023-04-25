@@ -38,7 +38,7 @@ fn main() -> std::io::Result<()>{
 
 
 fn gen_password(len: u32)->String{
-    let string = String::from("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*");
+    let string = String::from("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@.");
     let vs = string.chars().collect::<Vec<char>>();
     let pass_len = len;
     let mut password = String::new();
